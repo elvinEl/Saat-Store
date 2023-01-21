@@ -1,0 +1,963 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+body {
+    padding-top: 50px;
+    background-color: #F2F3F5;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    background-color: #353e48;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+nav a:hover {
+    color: lime;
+    background-color: rgb(96, 95, 95);
+    transition: 500ms;
+}
+
+nav a {
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 0 35px;
+}
+
+section {
+    height: calc(100vh - 50px);
+}
+
+#Anasəhifə {
+    scroll-margin: 50px;
+    width: 75%;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+#Haqqında {
+    scroll-margin: 50px;
+    position: relative;
+
+
+}
+
+
+
+#Əlaqə {
+    scroll-margin: 50px;
+}
+
+#Ünvan {
+    scroll-margin: 50px;
+    background-color: #6c757d;
+}
+
+
+
+
+.top {
+    position: relative;
+    bottom: 9px;
+    right: 10px;
+    color: white;
+    position: fixed;
+    text-decoration: none;
+
+
+}
+
+.top i {
+    cursor: pointer;
+    font-size: 45px;
+    color: #0054af;
+}
+
+/* haqqinda */
+#Haqqında .text {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #30363D;
+    position: absolute;
+    top: 3rem;
+    left: 9rem;
+}
+
+#Scroll {
+    scroll-margin: 50px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#Haqqında .text:hover {
+    text-decoration: underline;
+}
+
+/* haqqinda boxes */
+#Haqqında .down-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 485px;
+    width: 80%;
+    margin: 10px;
+    margin: 0 auto;
+    /* z-index: -10; */
+    position: absolute;
+    top: 7rem;
+    left: 8.6rem;
+}
+
+#red {
+    background-color: rgb(39, 91, 169);
+    margin-right: 25px;
+}
+
+#red:hover {
+    background-color: #4a4a4a;
+    color: white;
+}
+
+.box1 {
+    background-color: white;
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box1:hover .box1-btn {
+    background-color: #007bff;
+    transition: 500ms;
+
+}
+
+.box1:hover a {
+    color: #007bff;
+    transition: 500ms;
+}
+
+.box1:hover img {
+    opacity: 0.8;
+    transition: 500ms;
+
+}
+
+.input-ada {
+    border: none;
+    padding-left: 10px;
+    border: 6px;
+}
+
+.img img {
+    margin-top: 45px;
+    margin-left: 15px;
+}
+
+.box1-text {
+    text-align: center;
+    line-height: 2;
+}
+
+.box1-btn {
+    width: 90%;
+    padding: 0.5rem;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    font-size: inherit;
+    margin-bottom: 10px;
+}
+
+.div-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.box1-text>a {
+    font-size: 22px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right {
+    clip-path: polygon(12% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+
+
+
+/* ----------------#HAQQINDA BURDA YEKUNLASIN---------- */
+
+/* ------------#ANA SEHIFE------------- */
+
+.boxes4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: 15px auto;
+    gap: 10px;
+}
+
+.boxes4 p {
+    font-size: 14px;
+    color: rgb(175, 175, 175);
+    background-color: white;
+
+}
+
+.box4-1 {
+    position: relative;
+    display: flex;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 5px 0px;
+    gap: 10px;
+}
+
+.div-icon i {
+    font-size: 40px;
+    color: rgb(39, 91, 169);
+    margin-top: 6px;
+    line-height: 1.3;
+}
+
+.hover-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 6px;
+    height: 100%;
+    background-color: black;
+    transition: 1s;
+
+}
+
+.box4-1:hover .hover-box {
+    display: block;
+}
+
+/* -------------HEADER LOGO----------- */
+.logo img {
+    display: inline;
+    height: 80px;
+}
+
+.logo {
+    display: inline;
+}
+
+.header {
+    display: flex;
+    margin: 15px;
+}
+
+.input-head {
+    display: flex;
+}
+
+.input {
+    display: grid;
+    height: 2rem;
+    width: 25rem;
+    margin: 35px 15px;
+    border: none;
+
+}
+
+.input {
+    position: relative;
+}
+
+.input>i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #CBCFD4;
+    cursor: pointer;
+}
+
+.input>i:hover {
+    color: #007bff;
+}
+
+.tel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.tel>i {
+    font-size: 30px;
+    color: #CBCFD4;
+}
+
+.tel>i:hover {
+    color: #007bff;
+}
+
+.tel>p {
+    margin: 0 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+
+/* ------------JAVA SCRIPT---------- */
+.card-img-top {
+    width: 90%;
+    margin: 0 auto;
+    height: 400px;
+    margin-top: 1.5rem;
+}
+
+.btn-primary {
+    display: none;
+}
+
+/* ----------------------------------------- */
+/* MEDIUM BURDA BASLAYIB */
+.medium {
+    position: fixed;
+    top: 15rem;
+    /* bottom: 25rem; */
+    right: 0rem;
+    /* width: 60px; */
+    background-color: #343e48;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+    color: white;
+}
+
+.top1 {
+    padding: 15px;
+}
+
+.top2 {
+    padding: 15px;
+}
+
+.top3 {
+    padding: 15px;
+}
+
+.top1:hover {
+    background-color: #007bff;
+}
+
+.top2:hover {
+    background-color: #007bff;
+}
+
+.top3:hover {
+    background-color: #007bff;
+}
+
+/* -------------------------------------------- */
+
+/* ELAQE BURDAN BASLAYIR----------------- */
+
+#Əlaqə .text {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #30363D;
+    position: absolute;
+    top: 3rem;
+    left: 9rem;
+}
+
+#Əlaqə {
+    position: relative;
+}
+
+#Əlaqə .text:hover {
+    text-decoration: underline;
+}
+
+#Əlaqə .down-boxes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 485px;
+    width: 80%;
+    margin: 10px;
+    margin: 0 auto;
+    /* z-index: -10; */
+    position: absolute;
+    top: 7rem;
+    left: 8.6rem;
+}
+
+.box2 {
+    background-color: white;
+    margin: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.box2:hover .box2-btn {
+    background-color: #007bff;
+    transition: 500ms;
+
+}
+
+.box2:hover a {
+    color: #007bff;
+    transition: 500ms;
+
+}
+
+.box2:hover img {
+    transition: 500ms;
+
+    opacity: 0.8;
+}
+
+.box2-img img {
+    margin-top: 45px;
+    margin-left: 15px;
+}
+
+.box2-text {
+    text-align: center;
+    line-height: 2;
+}
+
+.box2-btn {
+    width: 90%;
+    padding: 0.5rem;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+    font-size: inherit;
+    margin-bottom: 10px;
+}
+
+.div2-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.box2-text>a {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* -----------------------XEBERLER --------------- */
+
+#Xəbərlər {
+    width: 75%;
+    margin: 0 auto;
+
+}
+
+.xeberler {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image img {
+    height: 400px;
+    width: 100%;
+    display: block;
+    border-radius: 25px;
+}
+
+.images img {
+    display: block;
+    border-radius: 25px;
+}
+
+.image {
+    display: inline-block;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 3px;
+    border-radius: 25px;
+    cursor: grab;
+}
+
+figure:hover {
+    border-radius: 25px;
+
+}
+
+.image #zoom-out figure img {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+}
+
+.image #zoom-out figure:hover img {
+    transform: scale(1.2);
+}
+
+.images #zoom-out figure img {
+    transform: scale(1);
+    transition: 0.5s ease-in-out;
+    margin-top: 48px;
+}
+
+.images #zoom-out figure:hover img {
+    transform: scale(1.2);
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+/* .zoom-center{
+    display: flex;
+    justify-content: center;
+} */
+/* ---------------DROPDOWN BUTTON------------ */
+.dropbtn {
+    background-color: rgba(65, 129, 255, 1);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 207px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: rgba(65, 129, 255, 1);
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgb(10, 76, 208);
+}
+
+.dropdown i {
+    padding: 0 10px;
+}
+
+form {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.value-button {
+    display: inline-block;
+
+    margin: 0px;
+    width: 40px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 11px 0;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+form #decrease {
+    font-size: 18px;
+    margin-right: -4px;
+    border-radius: 8px 0 0 8px;
+    font-weight: inherit;
+}
+
+form #increase {
+    margin-left: -4px;
+    border-radius: 0 8px 8px 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+form #input-wrap {
+    margin: 0px;
+    padding: 0px;
+}
+
+input:is(#number, #number1, #number2, #number3, #number4, #number5, #number6, #number7, #number8, #number9, ) {
+    text-align: center;
+    border: none;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin: 0px;
+    width: 40px;
+    height: 42px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* -------------------------------------------------------------- */
+
+.div-attack {
+    background-image: url(images/rolex\ hall.webp);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+/* =================SCROLL================ */
+.scroll-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-img img {
+    font-size: 20px;
+}
+
+.scroll-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 3;
+}
+
+.buttonBB {
+    padding: 10px;
+    background-color: white;
+    color: chocolate;
+    font-weight: 600;
+    border-radius: 25px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    width: 60%;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.scroll-text h3 {
+    font-size: 20px;
+}
+
+.scroll-text p {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: chocolate;
+}
+
+/* =================================================== */
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background-image: url(images/bg.svg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.swiper-slide img {
+    display: block;
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* =================================== */
+.drop-btn {
+    background-color: #353e48;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(73, 73, 73);
+}
+
+.drop-down {
+    position: absolute;
+    left: 5px;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.drop-down:hover .dropdown-content {
+    display: block;
+}
+
+.drop-down:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* ==============================SAAT============ */
+.drop-btn1 {
+    background-color: #353e48;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(73, 73, 73);
+}
+
+.drop-down1 {
+    position: absolute;
+    left: 52px;
+    display: inline-block;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+
+.dropdown-content1 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content1 a:hover {
+    background-color: #f1f1f1
+}
+
+.drop-down1:hover .dropdown-content1 {
+    display: block;
+}
+
+.drop-down1:hover .dropbtn1 {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+[data-aos="custom"] {
+    transform: translateY(100px);
+    transition-property: transform;
+}
+
+[data-aos="custom"].aos-animate {
+    transform: translateY(0);
+}
+
+@-webkit-keyframes brk-pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(2)
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@keyframes brk-pulse {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(2)
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes brk-pulse-paused {
+    0%,to {
+        transform: scale(1)
+    }
+
+    20% {
+        transform: scale(1.2)
+    }
+
+    60% {
+        transform: scale(.9);
+        opacity: 0
+    }
+}
+
+@keyframes brk-pulse-paused {
+    0%,to {
+        transform: scale(1)
+    }
+
+    20% {
+        transform: scale(1.2)
+    }
+
+    60% {
+        transform: scale(.9);
+        opacity: 0
+    }
+}
+
+button>.after {
+  
+    opacity: .2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #25d366;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+button>.before {
+   
+    transform: scale(1.3);
+    opacity: .1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #25d366;
+    border-radius: 50%;
+    z-index: -1;
+
+}
+button>.before {
+    -webkit-animation:1.5s brk-pulse 1.5s infinite;
+    animation:1.5s brk-pulse 1.5s infinite;
+}
+button>.after {
+    -webkit-animation: brk-pulse 1.5s infinite;
+    animation: brk-pulse 1.5s infinite;
+}

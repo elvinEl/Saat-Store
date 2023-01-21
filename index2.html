@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js">
+    </script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Glory:wght@200;300;301&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>Saat Store 2</title>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-button-next {
+            color: black;
+        }
+
+        .swiper-button-prev {
+            color: black;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .swiper-slide {
+            background-size: cover;
+            background-position: center;
+        }
+
+        .mySwiper2 {
+            height: 80%;
+            width: 100%;
+        }
+
+        .mySwiper {
+            height: 20%;
+            box-sizing: border-box;
+            padding: 10px 0;
+        }
+
+        .mySwiper .swiper-slide {
+            width: 25%;
+            height: 100%;
+            opacity: 0.4;
+        }
+
+        .mySwiper .swiper-slide-thumb-active {
+            opacity: 1;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="drop-down">
+            <button class="drop-btn"><i class="fa-solid fa-location-dot"></i></button>
+            <div class="dropdown-content">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.42999466046!2d49.71487539548643!3d40.39450797992698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2z0JHQsNC60YMsINCQ0LfQtdGA0LHQsNC50LTQttCw0L0!5e0!3m2!1sru!2s!4v1667769267924!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="drop-down1">
+            <button class="drop-btn1"><i class="fa-solid fa-clock"></i></button>
+            <div class="dropdown-content1">
+                <p>Hər Gün <strong>10:00-20:00</strong> </p>
+            </div>
+        </div>
+
+
+
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i>Bütün Kateqoriyalar</button>
+            <div class="dropdown-content">
+                <a onclick="switchfunc()" class="drpDwn href="#">Zinət əşyaları</a>
+                <a href="#">Qadın Saatları</a>
+                <a href="#">Divar Saatları</a>
+            </div>
+        </div>
+        <a class="anasehife" onclick="newFunc()" href="#Anasəhifə">Ana Səhifə</a>
+        <a href="#Scroll">Brend Mallar</a>
+        <a href="#Haqqında">Ən Çox Satılanlar</a>
+        <a href="#Əlaqə">Xüsusi Təkliflər</a>
+        <a href="#Xəbərlər">Kampaniyalar</a>
+        <a href="#Ünvan">Ünvan</a>
+    </nav>
+
+
+
+
+    <main>
+        <div class="product bg-white w-[80%] m-auto grid grid-cols-10 mt-[5rem] border-y-[100%] mb-[5rem]">
+            <div class="product-left col-span-5 relative">
+                <div class="product-stickers absolute left-[20px] top-[20px] z-10">
+                    <div class="px-[5px] py-[3px] flex justify-center bg-red-500 text-[10px] text-white">-20%</div>
+                    <div
+                        class="px-[5px] py-[3px] flex justify-center bg-[rgb(255,0,0)] text-[10px] text-white mt-[0.8rem]">
+                        ENDIRIM</div>
+                </div>
+                <!-- <div class="flex justify-center">
+                    <a href="#"><img class="h-[70vh]" src="img/saat big.png" alt=""></a>
+                </div> -->
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/VT-00005159-1000x1000.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/VT-00004433-1000x1000.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/VT-00004154-1000x1000.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/ge-catalog-products-VT-00000948-1000x1000.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/ge-catalog-products-VT-00000288-1000x1000.jpg" />
+                        </div>
+
+
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="images/VT-00005159-1000x1000.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/VT-00004433-1000x1000.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/VT-00004154-1000x1000.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/ge-catalog-products-VT-00000948-1000x1000.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="images/ge-catalog-products-VT-00000288-1000x1000.jpg" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-right col-span-5 flex flex-col mt-[2rem] p-[15px]">
+                <a href="#" class="text-[15px]">Brend:<span class="underline text-[#50A8FF] hover:no-underline">SWISS
+                        MILITARY</span></a>
+                <a href="#" class="text-[15px]">Model:<span>VT-00004153 VT-00004153</span> </a>
+                <a href="#" class="text-[15px]">Mövcudluq:<span class="text-[#71BE00]">Anbarda</span></a>
+                <div class="flex gap-[2rem] items-center mt-[1.5rem]">
+                    <p
+                        class="h-8 w-[7rem] flex justify-center items-center font-bold text-[18px] bg-[#EB5757] text-white">
+                        567.20AZN</p><span class="line-through text-[#AFAFAF]">709AZN</span>
+                </div>
+
+                <div class="flex gap-[0.5rem] mt-[1.5rem]">
+                    <div class="text-[2rem] text-[#bbb]">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <span>Bir kliklə al</span>
+                        <span class="text-[12px] text-[#bbb]">Telefon nömrəsini daxil edin və biz geri zəng
+                            edəcəyik</span>
+                    </div>
+
+                </div>
+                <form action="">
+                    <div class="input-group flex mt-[1rem]">
+                        <input type="text" name="phone" class="first-phone h-10 border-[1px] p-[10px]"
+                            placeholder="Telefon nömrəsi">
+                        <button
+                            class="bg-[#E5E5E5] h-10 px-6 hover:bg-blue-700 hover:text-white duration-700">Al</button>
+                    </div>
+                </form>
+
+
+                <div class="text-[#4F5C50] mt-[3rem]">
+                    <div class="flex justify-between text-[13px] mb-[3px]">
+                        <span class="category">Kateqoriyalar</span>
+                        <span>Kişi</span>
+                    </div>
+                    <div class="flex justify-between text-[13px] mb-[3px]">
+                        <span class="category">Korpus ölçüsü:
+                        </span>
+                        <span>41mm</span>
+                    </div>
+                    <div class="flex justify-between text-[13px] mb-[3px]">
+                        <span class="category">Mexanizm</span>
+                        <span>Kvars - Xronoqraf
+                        </span>
+                    </div>
+                    <div class="flex justify-between text-[13px] mb-[3px]">
+                        <span class="category">Qolbaq növü:
+                        </span>
+                        <span>Paslanmaz Polad
+                        </span>
+                    </div>
+                    <div class="flex justify-between text-[13px] mb-[3px]">
+                        <span class="category">Su keçirməzlik:
+                        </span>
+                        <span>5 ATM
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="mt-[2rem]">
+                    <span>Sayı:</span>
+                    <div class="box-right-form">
+                        <form>
+                            <div class="value-button" id="decrease1" onclick="decreaseValue5()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number5" value="0" />
+                            <div class="value-button" id="increase1" onclick="increaseValue5()" value="Increase Value">+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="mt-[1rem]">
+                        <button
+                            class="w-[240px] text-white py-[10px] font-medium bg-blue-800 hover:bg-blue-700 hover:duration-500">Səbətə at</button>
+                             <button class="scale relative py-[8px] px-[12px] text-[18px] text-red-500 bg-white border-none cursor-pointer rounded-[50%] bg-[#E5E5E5] hover:bg-gray-300 hover:scale-[1]"><i
+                                class="fa-solid fa-heart"></i>
+                                <span class="before"></span>
+                                <span class="after"></span>
+                            </button>
+                    </div>
+                    <div class="mt-[1rem]">
+                        <!-- <button
+                            class="w-[240px] text-white py-[10px] font-medium bg-[#999] hover:bg-gray-500 hover:duration-500 ">Sifariş
+                            et</button> -->
+                        <div class="page-wrapper">
+                            <a class="btn trigger py-[10px] bg-[#999] text-white hover:bg-gray-500 duration-500 font-medium"
+                                href="javascript:;">Sifariş et</a>
+                        </div>
+                        <div class="modal-wrapper">
+                            <div class="modal">
+                                <div class="head">
+                                    <a class="btn-close trigger" href="javascript:;"></a>
+                                </div>
+                                <div class="content">
+
+                                    <div class="modal-main-container grid grid-cols-10">
+                                        <div class="modal-content-left grid col-span-5 mx-auto">
+
+                                            <div class="mx-auto">
+                                                <img src="images/new watch 4.jpg" alt="">
+                                            </div>
+                                            <div class="flex justify-center mt-[1rem]">
+                                                <p>RA-AA0009L19B</p>
+                                            </div>
+
+                                            <div class="mt-[1rem]">
+
+                                                <form class="flex justify-center gap-[5px]">
+                                                    <div class="value-button" id="decrease1" onclick="decreaseValue10()"
+                                                        value="Decrease Value">-
+                                                    </div>
+                                                    <input type="number" id="number10" value="0" />
+                                                    <div class="value-button" id="increase1" onclick="increaseValue10()"
+                                                        value="Increase Value">+
+                                                    </div>
+                                                </form>
+                                            </div>
+
+
+                                            <div class="flex justify-center mt-[1rem]">
+                                                <p>Qiyməti:   <strong>599AZN</strong></p>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="modal-content-right col-span-5">
+                                            <div>
+                                                <input class="border-[1px] h-10 w-full px-[10px] placeholder:text-[12px]" type="text" placeholder="Adınızı daxil edin">
+                                            </div>
+                                            <div class="mt-[1rem]">
+                                                <input class="border-[1px] h-10 w-full px-[10px] placeholder:text-[12px]" type="text" placeholder="Telefonunuzu daxil edin">
+                                            </div>
+                                            <div class="mt-[1rem]">
+                                               <textarea  name="" id="" cols="56" rows="10" class="border-[1px] placeholder:px-[10px] py-[10px] text-[12px]" placeholder="Şərhinizi daxil edin"></textarea>
+                                            </div>
+
+                                            <div class="flex gap-[10px] items-start">
+                                                <input class="flex items-start" type="checkbox">
+                                                <p class="text-[12px]">Mən oxudum Saytın istifadə şərtləri və şəxsi məlumatların
+                                                    təhlükəsizliyi və emal şərtləri ilə razıyam</p>
+                                            </div>
+
+                                            <div class="mt-[1rem]">
+                                                <button class="py-[7px] px-[12px] bg-blue-700 text-white hover:bg-blue-500 duration-700">Sifariş et</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="main-footer grid grid-cols-10 relative">
+            <div class="footer-left w-full col-span-4 absolute left-[0px] h-[385px]">
+                <iframe class=" col-span-5 h-full w-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.7978984665197!2d49.82157144929728!3d40.36858178064437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc5db2da509%3A0x8cc1c152888dcd4b!2z0JDQu9GC0LXRgSDQn9C70LDQt9Cw!5e0!3m2!1sru!2s!4v1673804433367!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footer-right   bg-[#d0a05e] col-span-6 absolute right-[0px] w-[60%]">
+                <div class="flex flex-col justify-between w-[70%] m-auto">
+                    <div class="pt-[3rem]">
+                        <p class="text-[1.75rem] text-white">ABUNƏ OLUN</p>
+                    </div>
+
+                    <hr class="my-[30px]">
+
+                    <form action="">
+                        <input class="w-full h-[50px] px-[20px] text-black" placeholder="E-poçt" type="text">
+                    </form>
+                    <hr class="my-[30px]">
+
+                    <div class="flex justify-between flex-wrap mb-[10px]">
+
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]"> <i
+                                class="flex items-center fa-solid fa-location-pin"></i> Azərbaycan, Bakı,<br>
+                            "Port Baku" biznes mərkəzi, 8-ci mərtəbə
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a class="flex items-center" href="#">info@galeleo.az</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-whatsapp"></i>
+                            <a href="#">+994-50-777-66-22</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a href="#">@galeleo.watch</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a href="#">@galeleo.az</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="fixed right-[10px] bottom-[90px] hover:scale-[1] "><i class="w-[50px] h-[50px] flex justify-center items-center text-white bg-[#25d366] rounded-[50%] text-[30px] fa-brands fa-whatsapp"></i>
+        <span class="before"></span>
+        <span class="after"></span>
+    </button>
+
+
+    <div class=top>
+        <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </div>
+
+
+   
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+
+
+    <!-- Input phone number jquery -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".first-phone").inputmask("(999)-999-9999");
+
+        });
+    </script>
+
+    <!-- MODAL JS -->
+    <script>
+        $(document).ready(function () {
+            $('.trigger').click(function () {
+                $('.modal-wrapper').toggleClass('open');
+                $('.page-wrapper').toggleClass('blur');
+                return false;
+            });
+        });
+    </script>
+</body>
+
+</html>

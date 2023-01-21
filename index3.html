@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Glory:wght@200;300;301&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="drop-down">
+            <button class="drop-btn"><i class="fa-solid fa-location-dot"></i></button>
+            <div class="dropdown-content">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.42999466046!2d49.71487539548643!3d40.39450797992698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2z0JHQsNC60YMsINCQ0LfQtdGA0LHQsNC50LTQttCw0L0!5e0!3m2!1sru!2s!4v1667769267924!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="drop-down1">
+            <button class="drop-btn1"><i class="fa-solid fa-clock"></i></button>
+            <div class="dropdown-content1">
+                <p>Hər Gün <strong>10:00-20:00</strong> </p>
+            </div>
+        </div>
+
+
+
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i>Bütün Kateqoriyalar</button>
+            <div class="dropdown-content">
+                <a href="#">Zinət əşyaları</a>
+                <a href="#">Qadın Saatları</a>
+                <a href="#">Divar Saatları</a>
+            </div>
+        </div>
+        <a onclick="newFunc()" href="#Anasəhifə">Ana Səhifə</a>
+        <a href="#Scroll">Brend Mallar</a>
+        <a href="#Haqqında">Ən Çox Satılanlar</a>
+        <a href="#Əlaqə">Xüsusi Təkliflər</a>
+        <a href="#Xəbərlər">Kampaniyalar</a>
+        <a href="#Ünvan">Ünvan</a>
+    </nav>
+    <main>
+
+        <div class="header-text flex justify-center items-center h-[150px] w-full bg-[#272727]">
+            <p class="text-[2rem] font-light text-white">ZINƏT ƏŞYALARI</p>
+        </div>
+
+        <div class="main-container-column grid grid-cols-8 w-[80%] m-auto gap-[20px] my-[4rem]">
+
+            <div class="col-left-content p-[10px] col-span-2 border-[1px]">
+                <div class="border-b flex items-center">
+                    <p class="font-extrabold  text-[1.4rem]">Filtr</p>
+                </div>
+                <div class="brands-layout mt-[1rem]  border-b ">
+                    <p class="text-[1.4rem] font-extrabold">Brendlər</p>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Hamısı</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Boucheron</label>
+                    </div>
+
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Chanel</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Fred of Paris</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Galeleo</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Graff</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Korloff</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Luca Carati</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Messika</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Mikimoto</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Nanis</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Pasquale Bruni</label>
+                    </div>
+                    <div class="brand-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Roberto Coin</label>
+                    </div>
+
+                </div>
+                <div class="type-layout mt-[1rem] border-b">
+                    <p class="font-extrabold text-[1.4rem]">Növü</p>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Qolbaq</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Sancaq</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Düyməlik</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Gərdanlıq</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Üzük</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Komplekt</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Kulon</label>
+                    </div>
+
+                </div>
+
+                <div class="gender-layout mt-[1rem]">
+
+                    <p class="font-extrabold text-[1.4rem]">Cins</p>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Hamısı</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Kişi</label>
+                    </div>
+                    <div class="type-text flex items-center mt-[2rem] mb-[1rem]">
+                        <input class="radio-input" type="radio">
+                        <label for="" class="pl-[8px] text-[.875rem]">Qadın</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-right-content col-span-6 border-[1px]">
+                <div class="section-boxes-main grid grid-cols-6 gap-[20px]">
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center">
+                                    <figure>
+                                        <img class="h-[270px]" src="images/zinyet.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]">
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] z-10 text-white">Rolex</span>
+                        </div>
+                     
+                        
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]" href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center relative">
+                                    <div class="sale absolute top-[10px] right-[0px] z-10 flex justify-center items-center w-[100px] h-[34px] bg-[#FE0000] font-extrabold text-white">Sale %</div>
+                                    <figure>
+                                        <img class="h-[270px]" src="images/zinyet2.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]">
+                        </div>
+                        <div class="flex justify-center items-center ">
+                            
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center">
+                                    <figure>
+                                        <img class="h-[270px]" src="images/zinyet1.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center relative">
+                                    <div class="sale absolute top-[10px] right-[0px] z-10 flex justify-center items-center w-[100px] h-[34px] bg-[#FE0000] font-extrabold text-white">Sale %</div>
+                                    <figure>
+                                       
+                                        <img class="h-[270px]" src="images/zinyet1.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center">
+                                    <figure>
+                                        <img class="h-[270px]" src="images/bilerzik.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center">
+                                    <figure>
+                                        <img class="h-[270px]" src="images/kloun.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center relative">
+                                    <div class="sale absolute top-[10px] right-[0px] z-10 flex justify-center items-center w-[100px] h-[34px] bg-[#FE0000] font-extrabold text-white z-10">Sale %</div>
+                                    <figure>
+                                        <img class="h-[270px]" src="images/sirga.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center">
+                                    <figure>
+                                        <img class="h-[270px]" src="images/uzuk.webp" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center relative">
+                                    <div class="sale absolute top-[10px] right-[0px] z-10 flex justify-center items-center w-[100px] h-[34px] bg-[#FE0000] font-extrabold text-white">Sale %</div>
+                                    <figure>
+                                        <img class="h-[270px]" src="images/bilerzik.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center relative">
+                                    <div class="sale absolute top-[10px] right-[0px] z-10 flex justify-center items-center w-[100px] h-[34px] bg-[#FE0000] font-extrabold text-white">Sale %</div>
+                                    <figure>
+                                        <img class="h-[270px]" src="images/bilerzik.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center">
+                                    <figure>
+                                        <img class="h-[270px]" src="images/bilerzik.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                    <div class="box2 col-span-2" data-aos="custom" data-aos-delay="450">
+                        <div class="row">
+                            <div class="images">
+                                <div id="zoom-out" class="zoom-center">
+                                    <figure>
+                                        <img class="h-[270px]" src="images/bilerzik.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-[1px] w-full bg-gray-200 mb-[-21px]"></div>
+                        <div class="flex justify-center items-center ">
+                            <span
+                                class="bg-[#d0a05e] w-[60%] flex justify-center items-center rounded-full font-bold text-[.875rem] my-[10px] text-white z-10">Rolex</span>
+                        </div>
+                        <div class="box2-text leading-5">
+                            <a class="font-extrabold text-[19px]  " href="#">Black Jade Rock & Diamonds</a>
+                        </div>
+                        <div class="flex justify-center text-[#d0a05e] font-extrabold mb-[0.5rem]  mt-[0.5rem]">
+                            <span>8000$</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="main-footer grid grid-cols-10 relative">
+            <div class="footer-left w-full col-span-4 absolute left-[0px] h-[385px]">
+                <iframe class=" col-span-5 h-full w-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.7978984665197!2d49.82157144929728!3d40.36858178064437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc5db2da509%3A0x8cc1c152888dcd4b!2z0JDQu9GC0LXRgSDQn9C70LDQt9Cw!5e0!3m2!1sru!2s!4v1673804433367!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footer-right   bg-[#d0a05e] col-span-6 absolute right-[0px] w-[60%]">
+                <div class="flex flex-col justify-between w-[70%] m-auto">
+                    <div class="pt-[3rem]">
+                        <p class="text-[1.75rem] text-white">ABUNƏ OLUN</p>
+                    </div>
+
+                    <hr class="my-[30px]">
+
+                    <form action="">
+                        <input class="w-full h-[50px] px-[20px] text-black" placeholder="E-poçt" type="text">
+                    </form>
+                    <hr class="my-[30px]">
+
+                    <div class="flex justify-between flex-wrap mb-[10px]">
+
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]"> <i
+                                class="flex items-center fa-solid fa-location-pin"></i> Azərbaycan, Bakı,<br>
+                            "Port Baku" biznes mərkəzi, 8-ci mərtəbə
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a class="flex items-center" href="#">info@galeleo.az</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-whatsapp"></i>
+                            <a href="#">+994-50-777-66-22</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a href="#">@galeleo.watch</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a href="#">@galeleo.az</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class=top>
+        <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </div>
+
+ 
+        <button class="fixed right-[10px] bottom-[90px] hover:scale-[1] "><i class="w-[50px] h-[50px] flex justify-center items-center text-white bg-[#25d366] rounded-[50%] text-[30px] fa-brands fa-whatsapp"></i>
+        <span class="before"></span>
+        <span class="after"></span>
+    </button>
+   
+
+    <script src="main.js"></script>
+</body>
+
+</html>

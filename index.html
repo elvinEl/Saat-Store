@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Glory:wght@200;300;301&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,600&family=Poppins:ital,wght@0,200;0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Saat Store</title>
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+            background-image: url(images/bg.svg);
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        < <div class="drop-down"> 
+            <button class="drop-btn"><i class="fa-solid fa-location-dot"></i></button>
+            <div class="dropdown-content">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194473.42999466046!2d49.71487539548643!3d40.39450797992698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2z0JHQsNC60YMsINCQ0LfQtdGA0LHQsNC50LTQttCw0L0!5e0!3m2!1sru!2s!4v1667769267924!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="drop-down1">
+            <button class="drop-btn1"><i class="fa-solid fa-clock"></i></button>
+            <div class="dropdown-content1">
+                <p>Hər Gün <strong>10:00-20:00</strong> </p>
+            </div>
+        </div>
+
+
+
+         <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i>Bütün Kateqoriyalar</button>
+            <div class="dropdown-content">
+                <a onclick="switchfunc()" class="drpDwn" href="#">Zinət əşyaları</a>
+                <a href="#">Qadın Saatları</a>
+                <a href="#">Divar Saatları</a>
+            </div>
+        </div> 
+        <a href="#Anasəhifə">Ana Səhifə</a>
+        <a href="#Scroll">Brend Mallar</a>
+        <a href="#Haqqında">Ən Çox Satılanlar</a>
+        <a href="#Əlaqə">Xüsusi Təkliflər</a>
+        <a href="#Xəbərlər">Kampaniyalar</a>
+        <a href="#Ünvan">Ünvan</a>
+    </nav>
+
+    <section id="Anasəhifə">
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo-new.png" alt="">
+
+                </a>
+            </div>
+            <div class="input">
+
+                <input class="input-ada" type="text" name="" id="" placeholder="Axtar"><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="tel">
+                <i class="fa-solid fa-mobile-retro"></i>
+                <p>+994558575697</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p> 0.00AZN </p>
+            </div>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="" alt="">
+            <div class="card-body">
+                <h4 class="card-tittle"></h4>
+                <a href="" class="btn-primary">MORE IMG</a>
+            </div>
+        </div>
+        <script>
+            var models = [
+                {
+                    image: "images/Sayt banner 8 noyabr-2820x874.jpg",
+                },
+                {
+                    image: "images/saat.jpg",
+                },
+                {
+                    image: "images/uzun-banner-birkart-2820x874.jpg",
+                },
+                {
+                    image: "images/banner-musteri-2820x874.png",
+
+                },
+                {
+                    image: "images/fon.jpg",
+                }
+            ];
+            setInterval(function () {
+
+
+                var index =
+                    Math.floor(Math.floor(Math.random() * models.length));
+
+                var img = document.querySelector(".card-img-top");
+                var tittle = document.querySelector(".card-tittle");
+                var a = document.querySelector('a');
+
+                img.setAttribute('src', models[index].image);
+                a.setAttribute('href', models[index].link);
+                tittle.textcontent = models[index].name;
+            }, 2500);
+
+
+
+
+
+        </script>
+
+        <div class="boxes4">
+
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+
+                    <i class="fa-solid fa-car"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma</h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+
+            </div>
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+                    <i class="fa-solid fa-credit-card"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma </h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+            </div>
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+                    <i class="fa-regular fa-comment"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma </h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+            </div>
+            <div class="box4-1">
+                <div class="hover-box">
+                </div>
+                <div class="div-icon">
+                    <i class="fa-solid fa-shop"></i>
+                </div>
+                <div class="div-right">
+                    <h4>Operativ çatdırılma </h4>
+                    <p>Bakı daxili sifarişlərin 99%-i gün ərzində çatdırılır</p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+    </section>
+    <div class="div-attack"></div>
+
+
+    <section id="Scroll">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img" data-aos="fade-right" data-aos-delay="100">
+                            <img src="images/bags.png" alt="">
+                        </div>
+                        <div class="scroll-text" data-aos="fade-left" data-aos-delay="100">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img">
+                            <img src="images/watch scrol.png" alt="">
+                        </div>
+                        <div class="scroll-text">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img">
+                            <img src="images/watch scroll1.png" alt="">
+                        </div>
+                        <div class="scroll-text">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="scroll-content">
+                        <div class="scroll-img">
+                            <img src="images/watch sc 3.png" alt="">
+                        </div>
+                        <div class="scroll-text">
+                            <h3>Birkin 30 Taurillion Orange</h3>
+                            <p>20500 $</p>
+                            <button class="buttonBB">Ətraflı</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+    <section id="Haqqında">
+        <div class="header-text">
+            <a class="text" href="#" data-aos="fade-in" data-aos-offset="200">Ən Çox Satılanlar</a>
+        </div>
+        <div class="down-boxes">
+
+
+            <div class="box1" data-aos="custom" data-aos-delay="50">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="box-right-2">
+                    <form>
+                        <div class="value-button" id="decrease" onclick="decreaseValue5()" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number5" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue5()" value="Increase Value">+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+
+            <div class="box1" data-aos="custom" data-aos-delay="150">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch 2.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="box-right-2">
+                    <form>
+                        <div class="value-button" id="decrease" onclick="decreaseValue6()" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number6" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue6()" value="Increase Value">+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+            <div class="box1" data-aos="custom" data-aos-delay="250">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch 3.png" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="box-right-2">
+                    <form>
+                        <div class="value-button" id="decrease" onclick="decreaseValue7()" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number7" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue7()" value="Increase Value">+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+            <div class="box1" data-aos="custom" data-aos-delay="350">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch 4.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="box-right-2">
+                    <form>
+                        <div class="value-button" id="decrease" onclick="decreaseValue8()" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number8" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue8()" value="Increase Value">+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+
+            <div class="box1" data-aos="custom" data-aos-delay="450">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="img/VT-00004090-200x200.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box1-text">
+                    <a href="#">
+                        G-SHOCK
+                    </a>
+                    <p>GA-2100VB-1ADR</p>
+                    <h4>239.00 AZN</h4>
+                </div>
+                <div class="box-right-2">
+                    <form>
+                        <div class="value-button" id="decrease" onclick="decreaseValue9()" value="Decrease Value">-
+                        </div>
+                        <input type="number" id="number9" value="0" />
+                        <div class="value-button" id="increase" onclick="increaseValue9()" value="Increase Value">+
+                        </div>
+                    </form>
+
+                </div>
+                <div class="div-btn">
+                    <button class="box1-btn">SƏBƏTƏ AT</button>
+
+                </div>
+            </div>
+
+
+    </section>
+
+
+    <section id="Əlaqə">
+        <div class="header-text">
+            <a class="text" href="#" data-aos="fade-in" data-aos-offset="200">Xusui Təklif</a>
+        </div>
+        <div class="down-boxes">
+            <div class="box2" data-aos="custom" data-aos-delay="50">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch 2.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="box-right-2">
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2" data-aos="custom" data-aos-delay="150">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch 4.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="box-right-2">
+                        <form>
+                            <div class="value-button" id="decrease1" onclick="decreaseValue1()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number1" value="0" />
+                            <div class="value-button" id="increase1" onclick="increaseValue1()" value="Increase Value">+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2" data-aos="custom" data-aos-delay="250">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch 3.png" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="box-right-2">
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue2()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number2" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue2()" value="Increase Value">+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2" data-aos="custom" data-aos-delay="350">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch 5.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">CASIO</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="box-right-2">
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue3()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number3" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue3()" value="Increase Value">+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="box2" data-aos="custom" data-aos-delay="450">
+                <div class="row">
+                    <div class="images">
+                        <div id="zoom-out" class="zoom-center">
+                            <figure onclick="myFunc()">
+                                <img src="images/new watch.jpg" alt="">
+                            </figure>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="box2-text">
+                    <a href="#">SANTA BARBARA</a>
+                    <P>SB.1.10264-4
+                    </P>
+                    <h4>169.00 AZN</h4>
+                    <div class="box-right-2">
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue4()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number4" value="0" />
+                            <div class="value-button" id="increase" onclick="increaseValue4()" value="Increase Value">+
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="div2-btn">
+                        <button class="box2-btn">SƏBƏTƏ AT</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <section class="xeberler" id="Xəbərlər">
+        <div class="row" data-aos-delay="50" data-aos="fade-right">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex2.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-down" data-aos-delay="150">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row" data-aos-delay="250" data-aos="fade-left">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex4.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row" data-aos-delay="50" data-aos="fade-right">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/watch.jpg" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row" data-aos="custom" data-aos-delay="150">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex666.webp" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="row" data-aos-delay="250" data-aos="fade-left">
+            <div class="image">
+                <div id="zoom-out">
+                    <figure>
+                        <img src="images/rolex.xxjpg.webp" alt="">
+                    </figure>
+                    <h3>MEN'S WATCHES</h3>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <footer>
+        <div class="main-footer grid grid-cols-10 relative">
+            <div class="footer-left w-full col-span-4 absolute left-[0px] h-[385px]">
+                <iframe class=" col-span-5 h-full w-full"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.7978984665197!2d49.82157144929728!3d40.36858178064437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc5db2da509%3A0x8cc1c152888dcd4b!2z0JDQu9GC0LXRgSDQn9C70LDQt9Cw!5e0!3m2!1sru!2s!4v1673804433367!5m2!1sru!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="footer-right   bg-[#d0a05e] col-span-6 absolute right-[0px] w-[60%]">
+                <div class="flex flex-col justify-between w-[70%] m-auto">
+                    <div class="pt-[3rem]">
+                        <p class="text-[1.75rem] text-white">ABUNƏ OLUN</p>
+                    </div>
+
+                    <hr class="my-[30px]">
+
+                    <form action="">
+                        <input class="w-full h-[50px] px-[20px] text-black" placeholder="E-poçt" type="text">
+                    </form>
+                    <hr class="my-[30px]">
+
+                    <div class="flex justify-between flex-wrap mb-[10px]">
+
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]"> <i
+                                class="flex items-center fa-solid fa-location-pin"></i> Azərbaycan, Bakı,<br>
+                            "Port Baku" biznes mərkəzi, 8-ci mərtəbə
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a class="flex items-center" href="#">info@galeleo.az</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-whatsapp"></i>
+                            <a href="#">+994-50-777-66-22</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a href="#">@galeleo.watch</a>
+                        </p>
+                        <p class="min-w-[48%] text-[.875rem] text-white font-bold mt-[10px] flex gap-[10px]">
+                            <i class="flex items-center fa-brands fa-square-facebook"></i>
+                            <a href="#">@galeleo.az</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="fixed right-[10px] bottom-[90px] hover:scale-[1] "><i class="w-[50px] h-[50px] flex justify-center items-center text-white bg-[#25d366] rounded-[50%] text-[30px] fa-brands fa-whatsapp"></i>
+        <span class="before"></span>
+        <span class="after"></span>
+    </button>
+
+
+    <div class=top>
+        <a href="#"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </div>
+
+
+    <div class="medium">
+        <div class="top1">
+            <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="top2">
+            <i class="fa-solid fa-hashtag"></i>
+        </div>
+
+        <div class="top3">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" lang="Javascript" src="main.js"></script>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init();
+
+
+
+
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
